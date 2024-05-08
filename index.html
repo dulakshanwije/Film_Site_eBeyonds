@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Library</title>
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container navbar">
+        <div class="logo"><img src="./assets/images/logo/Logo.svg" /></div>
+        <nav>
+          <a href="#"><p class="active">Home</p></a>
+          <a href="#"><p>Our Screens</p></a>
+          <a href="#"><p>Schedule</p></a>
+          <a href="#"><p>Movie Library</p></a>
+          <a href="#"><p>Location & Contact</p></a>
+          <a href="#"
+            ><img src="./assets/images/icons/burger_menu.svg" alt=""
+          /></a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="image-holder">
+        <img src="./assets/images/banner/banner.png" alt="" />
+      </div>
+      <!-- Intro Section -->
+      <div class="intro-holder">
+        <div class="intro">
+          <p class="intro-title">Movie Library</p>
+          <p class="intro-desc">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua.
+          </p>
+        </div>
+      </div>
+
+      <!-- Movies Section -->
+      <div class="movies-holder">
+        <div class="movies-topbar">
+          <p class="topbar-title">Collect your favorites</p>
+          <div class="search-box">
+            <img
+              src="./assets/images/icons/search.svg"
+              alt=""
+              class="search-icon"
+            />
+            <div class="search-bar">
+              <form action="">
+                <input type="text" placeholder="Search title and add to grid" />
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="movies-card-holder">
+          <div class="movies-card">
+            <div class="movies-image-holder">
+              <img src="./assets/images/movies/1.png" alt="" />
+              <div class="movies-close-btn" onclick="removeMovieCard(this)">
+                <img src="./assets/images/icons/close.svg" alt="" />
+              </div>
+            </div>
+            <div class="movies-info">
+              <p class="movies-title">Batman Returns</p>
+              <p class="movies-desc">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut…
+              </p>
+            </div>
+          </div>
+          <div class="movies-card">
+            <div class="movies-image-holder">
+              <img src="./assets/images/movies/2.png" alt="" />
+              <div class="movies-close-btn" onclick="removeMovieCard(this)">
+                <img src="./assets/images/icons/close.svg" alt="" />
+              </div>
+            </div>
+            <div class="movies-info">
+              <p class="movies-title">Wild Wild West</p>
+              <p class="movies-desc">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut…
+              </p>
+            </div>
+          </div>
+          <div class="movies-card">
+            <div class="movies-image-holder">
+              <img src="./assets/images/movies/3.png" alt="" />
+              <div class="movies-close-btn" onclick="removeMovieCard(this)">
+                <img src="./assets/images/icons/close.svg" alt="" />
+              </div>
+            </div>
+            <div class="movies-info">
+              <p class="movies-title">The Amazing Spiderman</p>
+              <p class="movies-desc">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut…
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="contact-holder">
+        <div class="contact-topbar">
+          <p class="contact-title">How to reach us</p>
+          <p class="contact-desc">Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+    </main>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

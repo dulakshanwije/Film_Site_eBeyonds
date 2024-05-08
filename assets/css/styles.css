@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Open+Sans:ital@0;1&display=swap");
+
+/* @import url("https://fonts.cdnfonts.com/css/din-alternate"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap");
+
+:root {
+  --white: #ffffff;
+  --black: #000000cc;
+  --dark-color-1: #0f0f0f;
+  --dark-color-2: #1d1d1d;
+  --dark-color-2-t: #1d1d1de6;
+  --dark-color-3: #3c3c3c;
+  --dark-color-4: #363636;
+  --dark-color-5: #c6c6c6;
+  --text-color-1: #eaeaea;
+  --text-color-2: #b7b7b7;
+  --text-color-3: #a3a3a3;
+  --btn-color-1: #cc9601;
+  /* background: #6A6A6A; */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  background-color: var(--dark-color-1);
+  width: 100%;
+}
+.container {
+  width: 100%;
+  padding: 0px 115px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 78px;
+  padding: 16px 115px;
+}
+.navbar .logo {
+  color: var(--white);
+}
+
+.navbar nav {
+  color: var(--white);
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  width: auto;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.navbar nav p {
+  margin-right: 32px;
+}
+
+.navbar .active {
+  border-bottom: 1px solid var(--white);
+  /* text-decoration: underline; */
+}
+
+.image-holder {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.image-holder img {
+  min-width: 100%;
+  height: auto;
+}
+
+.intro-holder {
+  background-color: var(--dark-color-1);
+  padding: 66px 115px 66px 115px;
+  color: var(--white);
+}
+
+.intro-holder .intro-title {
+  font-size: 3.43rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.intro-holder .intro-desc {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  max-width: 527px;
+}
+
+.movies-holder {
+  background-color: var(--dark-color-2);
+  color: var(--white);
+  padding: 50px 115px;
+}
+
+.movies-holder .movies-topbar {
+  height: 87px;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+  border-bottom: 2.3px solid var(--white);
+}
+
+.movies-holder .topbar-title {
+  font-size: 2.23rem;
+  line-height: 3.43rem;
+  font-family: "Barlow", sans-serif;
+}
+.movies-holder .search-box {
+  min-width: 424px;
+  height: 49px;
+  border: 0.5px solid var(--white);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+
+.search-box .search-icon {
+  width: 20.3px;
+  height: 20.3px;
+  margin: 12px;
+}
+
+.search-box .search-bar {
+  width: 225px;
+  height: 27px;
+}
+
+.search-bar input {
+  background-color: transparent;
+  width: 100%;
+  border: none;
+  height: 27px;
+  font-size: 1.14rem;
+  color: var(--white);
+}
+.search-bar input:focus {
+  outline: none;
+}
+
+.movies-card-holder {
+  display: grid;
+  /* grid-template-columns: auto auto auto; */
+  column-gap: 25px;
+  margin-top: 60px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-flow: column;
+}
+
+.movies-card-holder .movies-card {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.movies-card .movies-image-holder {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+}
+
+.movies-card .movies-image-holder img {
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.movies-card .movies-close-btn {
+  color: black;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  height: 57px;
+  width: 57px;
+  background-color: var(--dark-color-2-t);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.movies-card .movies-close-btn img {
+  width: 13px;
+  height: 13px;
+  object-fit: contain;
+}
+
+.movies-holder .movies-info {
+  background-color: var(--dark-color-3);
+  padding: 12px 26px 12px 26px;
+}
+
+.movies-info .movies-title {
+  font-family: "Barlow", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3rem;
+}
+
+.movies-info .movies-desc {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1.14rem;
+  line-height: 1.71rem;
+}
