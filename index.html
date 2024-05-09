@@ -11,15 +11,21 @@
     <header class="header">
       <div class="navbar-top">
         <div class="navbar max-screen-width">
-          <div class="logo"><img src="./assets/images/logo/Logo.svg" /></div>
+          <div class="logo">
+            <img src="./assets/images/logo/Logo.svg" alt="Logo" />
+          </div>
           <nav>
-            <a href="#"><p class="active">Home</p></a>
-            <a href="#"><p>Our Screens</p></a>
-            <a href="#"><p>Schedule</p></a>
-            <a href="#"><p>Movie Library</p></a>
-            <a href="#"><p>Location & Contact</p></a>
-            <a href="#"
-              ><img src="./assets/images/icons/burger_menu.svg" alt=""
+            <a aria-label="Home" href="#"><p class="active">Home</p></a>
+            <a aria-label="Our Screens" href="#"><p>Our Screens</p></a>
+            <a aria-label="Schedule" href="#"><p>Schedule</p></a>
+            <a aria-label="Movie Library" href="#"><p>Movie Library</p></a>
+            <a aria-label="Location & Contact" href="#"
+              ><p>Location & Contact</p></a
+            >
+            <a aria-label="Burger Menu" href="#"
+              ><img
+                src="./assets/images/icons/burger_menu.svg"
+                alt="Burger Menu"
             /></a>
           </nav>
         </div>
@@ -27,12 +33,12 @@
     </header>
     <main>
       <div class="image-holder">
-        <img src="./assets/images/banner/banner.png" alt="" />
+        <img src="./assets/images/banner/banner.png" alt="Main Banner" />
       </div>
       <!-- Intro Section -->
       <div class="intro-holder">
         <div class="max-screen-width intro">
-          <p class="intro-title">Movie Library</p>
+          <h3 class="intro-title">Movie Library</h3>
           <p class="intro-desc">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
@@ -45,11 +51,11 @@
       <div class="movies-holder">
         <div class="max-screen-width">
           <div class="movies-topbar">
-            <p class="topbar-title">Collect your favorites</p>
+            <h3 class="topbar-title">Collect your favorites</h3>
             <div class="search-box">
               <img
                 src="./assets/images/icons/search.svg"
-                alt=""
+                alt="Search Icon"
                 class="search-icon"
               />
               <div class="search-bar">
@@ -65,13 +71,13 @@
           <div class="movies-card-holder">
             <div class="movies-card">
               <div class="movies-image-holder">
-                <img src="./assets/images/movies/1.png" alt="" />
+                <img src="./assets/images/movies/1.png" alt="Movie Banner" />
                 <div class="movies-close-btn" onclick="removeMovieCard(this)">
-                  <img src="./assets/images/icons/close.svg" alt="" />
+                  <img src="./assets/images/icons/close.svg" alt="Close Icon" />
                 </div>
               </div>
               <div class="movies-info">
-                <p class="movies-title">Batman Returns</p>
+                <h6 class="movies-title">Batman Returns</h6>
                 <p class="movies-desc">
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                   diam nonumy eirmod tempor invidunt ut…
@@ -80,13 +86,13 @@
             </div>
             <div class="movies-card">
               <div class="movies-image-holder">
-                <img src="./assets/images/movies/2.png" alt="" />
+                <img src="./assets/images/movies/2.png" alt="Movie Banner" />
                 <div class="movies-close-btn" onclick="removeMovieCard(this)">
-                  <img src="./assets/images/icons/close.svg" alt="" />
+                  <img src="./assets/images/icons/close.svg" alt="Close Icon" />
                 </div>
               </div>
               <div class="movies-info">
-                <p class="movies-title">Wild Wild West</p>
+                <h6 class="movies-title">Wild Wild West</h6>
                 <p class="movies-desc">
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                   diam nonumy eirmod tempor invidunt ut…
@@ -95,13 +101,13 @@
             </div>
             <div class="movies-card">
               <div class="movies-image-holder">
-                <img src="./assets/images/movies/3.png" alt="" />
+                <img src="./assets/images/movies/3.png" alt="Movie Banner" />
                 <div class="movies-close-btn" onclick="removeMovieCard(this)">
-                  <img src="./assets/images/icons/close.svg" alt="" />
+                  <img src="./assets/images/icons/close.svg" alt="Close Icon" />
                 </div>
               </div>
               <div class="movies-info">
-                <p class="movies-title">The Amazing Spiderman</p>
+                <h6 class="movies-title">The Amazing Spiderman</h6>
                 <p class="movies-desc">
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                   diam nonumy eirmod tempor invidunt ut…
@@ -116,36 +122,66 @@
       <div class="contact-holder">
         <div class="max-screen-width">
           <div class="contact-topbar">
-            <p class="contact-title">How to reach us</p>
+            <h3 class="contact-title">How to reach us</h3>
             <p class="contact-desc">Lorem ipsum dolor sit amet.</p>
           </div>
           <div class="contact-secondbar">
             <div class="contact-form">
               <span class="contact-form-input-box-top contact-form-input-box">
                 <span>
-                  <label for="" class="contact-form-label">First Name *</label>
-                  <input class="contact-form-input" type="text" />
+                  <label for="first_name" class="contact-form-label"
+                    >First Name *</label
+                  >
+                  <input
+                    id="first_name"
+                    name="first_name"
+                    class="contact-form-input"
+                    type="text"
+                  />
                 </span>
                 <span>
-                  <label for="" class="contact-form-label">Last Name *</label>
-                  <input class="contact-form-input" type="text" />
+                  <label for="last_name" class="contact-form-label"
+                    >Last Name *</label
+                  >
+                  <input
+                    id="last_name"
+                    name="last_name"
+                    class="contact-form-input"
+                    type="text"
+                  />
                 </span>
               </span>
               <span class="contact-form-input-box">
-                <label for="" class="contact-form-label">Email *</label>
-                <input class="contact-form-input" type="text" />
+                <label for="email" class="contact-form-label">Email *</label>
+                <input
+                  id="email"
+                  name="email"
+                  class="contact-form-input"
+                  type="email"
+                />
               </span>
               <span class="contact-form-input-box">
-                <label for="" class="contact-form-label">Telephone</label>
-                <input class="contact-form-input" type="text" />
+                <label for="telephone" class="contact-form-label"
+                  >Telephone</label
+                >
+                <input
+                  name="telephone"
+                  id="telephone"
+                  class="contact-form-input"
+                  type="text"
+                />
               </span>
               <span class="contact-form-input-box">
-                <label for="" class="contact-form-label">Message</label>
-                <textarea class="contact-form-input"></textarea>
+                <label for="message" class="contact-form-label">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="contact-form-input"
+                ></textarea>
                 <p class="contact-form-label">*required fields</p>
               </span>
               <span class="contact-form-check-box">
-                <input type="checkbox" id="checkbox" />
+                <input type="checkbox" id="checkbox" name="checkbox" />
                 <span class="check-mark"></span>
                 <label for="checkbox" class="contact-form-label">
                   I agree to the
@@ -160,6 +196,7 @@
               <div class="mapouter">
                 <div class="gmap_canvas">
                   <iframe
+                    title="Google Map"
                     class="gmap_iframe"
                     width="100%"
                     frameborder="0"
@@ -187,8 +224,8 @@
             </div>
             <div class="footer-icon-box">
               <p>Follow us on</p>
-              <img src="./assets/images/icons/twitter.svg" alt="" />
-              <img src="./assets/images/icons/youtube.svg" alt="" />
+              <img src="./assets/images/icons/twitter.svg" alt="Twitter Logo" />
+              <img src="./assets/images/icons/youtube.svg" alt="Youtube Logo" />
             </div>
           </div>
           <div class="footer-bottom-box">
