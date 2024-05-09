@@ -605,10 +605,14 @@ a {
   .contact-holder {
     padding: 60px 0px;
   }
-
+  .contact-topbar {
+    padding: 0px 20px;
+  }
+  
   .contact-form {
     padding: 0px 20px;
   }
+
   .footer {
     padding: 30px 20px 20px 20px;
   }
