@@ -608,9 +608,13 @@ a {
   .contact-topbar {
     padding: 0px 20px;
   }
-  
+
   .contact-form {
     padding: 0px 20px;
+  }
+
+  .contact-form-input-box-top {
+    flex-direction: column;
   }
 
   .footer {
