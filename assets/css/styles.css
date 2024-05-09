@@ -19,11 +19,13 @@
   --btn-color-1: #cc9601;
   /* background: #6A6A6A; */
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 a {
   text-decoration: none;
   color: inherit;
@@ -35,6 +37,7 @@ a {
   position: fixed;
   z-index: 1;
 }
+
 /* .container {
   width: 100%;
   padding: 0px 115px;
@@ -58,6 +61,7 @@ a {
   justify-content: space-between;
   width: auto;
 }
+
 .navbar .logo {
   color: var(--white);
 }
@@ -148,6 +152,7 @@ a {
   line-height: 3.43rem;
   font-family: "Barlow", sans-serif;
 }
+
 .movies-holder .search-box {
   min-width: 424px;
   height: 49px;
@@ -178,6 +183,7 @@ a {
   font-size: 1.14rem;
   color: var(--white);
 }
+
 .search-bar input:focus {
   outline: none;
 }
@@ -272,6 +278,7 @@ a {
   letter-spacing: 0.05em;
   margin-bottom: 15px;
 }
+
 .contact-topbar .contact-desc {
   font-size: 1.286rem;
   color: var(--text-color-2);
@@ -304,6 +311,7 @@ a {
   flex-direction: column;
   width: 100%;
 }
+
 .contact-form-input-box-top {
   display: flex;
   flex-direction: row;
@@ -311,6 +319,7 @@ a {
   align-items: center;
   gap: 25px;
 }
+
 .contact-form-input-box-top input {
   width: 100%;
 }
@@ -324,6 +333,7 @@ a {
   padding: 5px;
   font-size: 1.3rem;
 }
+
 .contact-form-input-box input {
   height: 46px;
 }
@@ -394,12 +404,14 @@ a {
   width: 100%;
   height: 600px;
 }
+
 .contact-map .gmap_canvas {
   overflow: hidden;
   background: none !important;
   width: 100%;
   height: 600px;
 }
+
 .contact-map .gmap_iframe {
   height: 600px !important;
 }
@@ -454,9 +466,11 @@ a {
   .navbar nav p {
     margin-right: 20px;
   }
+
   .navbar-top {
     padding: 16px 50px;
   }
+
   .intro-holder {
     padding: 66px 50px;
   }
@@ -468,6 +482,7 @@ a {
   .contact-holder {
     padding: 60px 50px;
   }
+
   .footer {
     padding: 30px 50px 20px 50px;
   }
@@ -483,6 +498,7 @@ a {
   .navbar-top {
     padding: 16px 40px;
   }
+
   .intro-holder {
     padding: 66px 40px;
   }
@@ -494,6 +510,7 @@ a {
   .contact-holder {
     padding: 60px 40px;
   }
+
   .footer {
     padding: 30px 40px 20px 40px;
   }
@@ -509,13 +526,16 @@ a {
   .movies-card-holder {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
   .movies-holder .movies-topbar {
     flex-direction: column;
     height: auto;
   }
+
   .movies-holder .search-box {
     margin: 30px 0px;
   }
+
   .contact-secondbar {
     flex-direction: column;
   }
@@ -564,6 +584,7 @@ a {
     justify-content: center;
     padding-bottom: 30px;
   }
+
   .footer-top-box .footer-address-box {
     display: flex;
     flex-direction: column;
@@ -575,12 +596,18 @@ a {
   .footer .footer-bottom-box span {
     text-align: center;
   }
+
   .movies-holder .search-box {
     min-width: 100%;
     width: 100%;
   }
+
   .intro-holder .intro-title {
     font-size: 3rem;
+  }
+
+  .contact-form-input-box-top {
+    flex-direction: column;
   }
 }
 
@@ -594,6 +621,7 @@ a {
   .navbar-top {
     padding: 16px 20px;
   }
+
   .intro-holder {
     padding: 66px 20px;
   }
@@ -605,16 +633,13 @@ a {
   .contact-holder {
     padding: 60px 0px;
   }
+
   .contact-topbar {
     padding: 0px 20px;
   }
 
   .contact-form {
     padding: 0px 20px;
-  }
-
-  .contact-form-input-box-top {
-    flex-direction: column;
   }
 
   .footer {
