@@ -35,7 +35,7 @@ a {
   background-color: var(--dark-color-1);
   width: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
 }
 
 /* .container {
@@ -104,7 +104,7 @@ a {
   position: fixed;
   height: 100%;
   width: 0;
-  z-index: 2;
+  z-index: 3;
   background-color: #000000;
   top: 0;
   left: 0;
@@ -140,13 +140,14 @@ a {
   align-items: center;
   padding-top: 40px;
   justify-content: flex-start;
-  gap: 25px;
+  gap: 10px;
 }
 
 .sidemenu__item {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .sidemenu__holder {
@@ -310,6 +311,7 @@ a {
   padding: 12px 26px 12px 26px;
   height: 200px;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .movies-info .movies-title {
@@ -324,6 +326,32 @@ a {
   font-weight: 500;
   font-size: 1.14rem;
   line-height: 1.71rem;
+}
+
+.movies-holder .movies-result-box {
+  background-color: var(--dark-color-2-t);
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: none;
+}
+
+.movies-result-box .result-item {
+  display: inline;
+  width: 100%;
+  padding: 20px;
+  border-bottom: 1px solid var(--text-color-3);
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0.05em;
+  font-size: '1rem';
+}
+
+.movies-result-box .result-item:hover {
+  cursor: pointer;
+  scale: 1.005;
 }
 
 .contact-holder {
