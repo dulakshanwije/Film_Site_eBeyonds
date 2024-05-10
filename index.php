@@ -1,3 +1,19 @@
+<?php
+  session_start();
+
+  if(isset($_SESSION['error'])) {
+    $msg = $_SESSION['error'];
+    echo '<script>alert("'.$msg.'");</script>';
+    unset($_SESSION['error']);
+  }
+
+  if(isset($_SESSION['alert'])) {
+    $msg = $_SESSION['alert'];
+    echo '<script>alert("'.$msg.'");</script>';
+    unset($_SESSION['alert']);
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="auto">
   <head>
@@ -102,28 +118,15 @@
                 class="search-icon"
               />
               <div class="search-bar">
-                <form action="">
-                  <input
-                    type="text"
-                    placeholder="Search title and add to grid"
-                    onkeydown="onSearch(this.value)"
-                  />
-                </form>
+                <input
+                  type="text"
+                  placeholder="Search title and add to grid"
+                  onkeydown="onSearch(this.value)"
+                />
               </div>
             </div>
           </div>
-          <div class="movies-result-box" id="movies-result-box">
-            <p class="result-item">
-              Lorem, ipsum dolor. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Nesciunt quisquam illo, a cumque atque
-              temporibus eum illum voluptatibus architecto eligendi aut! Eaque
-              iste molestiae expedita repellat accusamus aliquam aliquid
-              ducimus.
-            </p>
-            <p class="result-item">Lorem, ipsum dolor.</p>
-            <p class="result-item">Lorem, ipsum dolor.</p>
-            <p class="result-item">Lorem, ipsum dolor.</p>
-          </div>
+          <div class="movies-result-box" id="movies-result-box"></div>
           <div class="movies-card-holder" id="movies-card-holder">
             <div
               data-aos="fade-up"
@@ -204,7 +207,7 @@
               data-aos-duration="1500"
               class="contact-form"
             >
-              <form method="get" action="">
+              <form method="post" action="./server/mail.php">
                 <span class="contact-form-input-box-top contact-form-input-box">
                   <span>
                     <label for="first_name" class="contact-form-label"
