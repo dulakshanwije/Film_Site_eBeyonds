@@ -267,7 +267,7 @@
                   <p class="contact-form-label">*required fields</p>
                 </span>
                 <span class="contact-form-check-box">
-                  <input type="checkbox" id="checkbox" name="checkbox" />
+                  <input type="checkbox" id="checkbox" name="checkbox" required/>
                   <span class="check-mark"></span>
                   <label for="checkbox" class="contact-form-label">
                     I agree to the
