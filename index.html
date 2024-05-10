@@ -8,6 +8,45 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
+    <!-- Side Bar Menu -->
+    <div id="sidemenu" class="sidemenu">
+      <div class="sidemenu__top" onclick="toggleSideMenu()">
+        <img
+          class="sidemenu__icon"
+          src="./assets/images/icons/close.svg"
+          alt="Close Icon"
+        />
+      </div>
+
+      <div class="sidemenu__bottom">
+        <div class="sidemenu__holder">
+          <a class="sidemenu__item" aria-label="Home" href="#"
+            ><p class="active">Home</p></a
+          >
+        </div>
+        <div class="sidemenu__holder">
+          <a class="sidemenu__item" aria-label="Our Screens" href="#"
+            ><p>Our Screens</p></a
+          >
+        </div>
+        <div class="sidemenu__holder">
+          <a class="sidemenu__item" aria-label="Schedule" href="#"
+            ><p>Schedule</p></a
+          >
+        </div>
+        <div class="sidemenu__holder">
+          <a class="sidemenu__item" aria-label="Movie Library" href="#"
+            ><p>Movie Library</p></a
+          >
+        </div>
+        <div class="sidemenu__holder">
+          <a class="sidemenu__item" aria-label="Location & Contact" href="#"
+            ><p>Location & Contact</p></a
+          >
+        </div>
+      </div>
+    </div>
+
     <header class="header">
       <div class="navbar-top">
         <div class="navbar max-screen-width">
@@ -24,6 +63,7 @@
             >
             <a aria-label="Burger Menu" href="#"
               ><img
+                onclick="toggleSideMenu()"
                 src="./assets/images/icons/burger_menu.svg"
                 alt="Burger Menu"
             /></a>
