@@ -91,7 +91,7 @@
       </div>
 
       <!-- Movies Section -->
-      <div class="movies-holder" onchange="resultWidthSetter()">
+      <div class="movies-holder">
         <div class="max-screen-width">
           <div class="movies-topbar">
             <h3 class="topbar-title">Collect your favorites</h3>
@@ -107,6 +107,7 @@
                     type="text"
                     placeholder="Search title and add to grid"
                     onkeypress="onSearch(this.value)"
+                    onchange="onSearch(this.value)"
                   />
                 </form>
               </div>
